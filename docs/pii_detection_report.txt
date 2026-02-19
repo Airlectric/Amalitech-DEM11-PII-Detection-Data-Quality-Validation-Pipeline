@@ -1,0 +1,83 @@
+PII DETECTION REPORT
+==================================================
+
+RISK ASSESSMENT:
+- HIGH: Names, Emails, Phone Numbers, Addresses, Dates of Birth
+- MEDIUM: Income (financial sensitivity)
+
+DETECTED PII:
+- Emails found: 10 (100.0%)
+- Phone numbers found: 10 (100.0%)
+- Names found: 10 (100.0%)
+- Addresses found: 8 (80.0%)
+- Dates of birth found: 9 (90.0%)
+
+DETAILED FINDINGS:
+
+1. EMAIL ADDRESSES:
+   - Row 2: john.doe@gmail.com
+   - Row 3: jane.smith@company.com
+   - Row 4: bob.johnson@email.com
+   - Row 5: mary.brown@gmail.com
+   - Row 6: robert.wilson@yahoo.com
+   - Row 7: PATRICIA.DAVIS@GMAIL.COM
+   - Row 8: michael.miller@work.com
+   - Row 9: sarah.wilson@gmail.com
+   - Row 10: david_moore@hotmail.com
+   - Row 11: jennifer.taylor@company.net
+
+2. PHONE NUMBERS:
+   - Row 2: 555-123-4567
+   - Row 3: 555-987-6543
+   - Row 4: (555) 234-5678
+   - Row 5: 555-345-6789
+   - Row 6: 555-456-7890
+   - Row 7: 555-567-8901
+   - Row 8: 555-678-9012
+   - Row 9: 555.789.0123
+   - Row 10: 5557890123
+   - Row 11: 555-890-1234
+
+3. NAMES:
+   - Row 2: John Doe
+   - Row 3: Jane Smith
+   - Row 4: Johnson
+   - Row 5: Mary Brown
+   - Row 6: Robert
+   - Row 7: Patricia Davis
+   - Row 8: Michael Miller
+   - Row 9: Sarah wilson
+   - Row 10: David Moore
+   - Row 11: Jennifer Taylor
+
+4. ADDRESSES:
+   - Row 2: 123 Main St New York NY 10001
+   - Row 4: 456 Oak Ave Los Angeles CA 90001
+   - Row 5: 789 Pine Rd Chicago IL 60601
+   - Row 6: 892 Elm St Houston TX 77001
+   - Row 7: 101 Birch Ln Phoenix AZ 85001
+   - Row 8: 111 Maple Dr Philadelphia PA 19101
+   - Row 9: 121 Cedar way San Antonio TX 78201
+   - Row 11: 131 Spruce St San Diego CA 92101
+
+5. DATES OF BIRTH:
+   - Row 2: 1985-03-15
+   - Row 3: 1990-07-22
+   - Row 4: 1988-11-08
+   - Row 5: 1975/05/10
+   - Row 6: 2005-12-25
+   - Row 8: 1992-02-14
+   - Row 9: 1968-06-18
+   - Row 10: 1958-09-30
+   - Row 11: 1970-03-05
+
+EXPOSURE RISK:
+If this dataset were breached, attackers could:
+- Phish customers (have emails)
+- Spoof identities (have names + DOB + address)
+- Social engineer (have phone numbers)
+- Conduct targeted attacks using financial data
+
+MITIGATION: Mask all PII before sharing with the analytics teams
+
+==================================================
