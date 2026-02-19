@@ -292,11 +292,11 @@ def main():
                            uniqueness, invalid_values, categorical_issues)
     
     # Save report
-    with open('notes/data_quality_report.txt', 'w', encoding='utf-8') as f:
+    with open('docs/data_quality_report.txt', 'w', encoding='utf-8') as f:
         f.write(report)
     
     print("Data quality analysis complete!")
-    print("Report saved to: notes/data_quality_report.txt")
+    print("Report saved to: docs/data_quality_report.txt")
     
     return report
 
