@@ -1,0 +1,20 @@
+DATA CLEANING LOG
+==================================================
+
+ACTIONS TAKEN:
+------------------------------
+Phone format: Normalized 8 rows to XXX-XXX-XXXX
+Date format: Converted 7 dates to YYYY-MM-DD
+Created date: Converted 9 dates to YYYY-MM-DD
+Name case: Applied title case to 18 names
+
+MISSING VALUES:
+------------------------------
+- first_name: 1 rows filled with '[UNKNOWN]'
+- last_name: 1 rows filled with '[UNKNOWN]'
+- address: 2 rows filled with '[UNKNOWN]'
+- income: 1 rows filled with 0
+- account_status: 1 rows filled with 'unknown'
+
+==================================================
+Output: customers_cleaned.csv (10 rows, 10 columns)

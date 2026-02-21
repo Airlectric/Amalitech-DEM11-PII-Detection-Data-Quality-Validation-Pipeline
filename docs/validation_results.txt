@@ -1,0 +1,46 @@
+VALIDATION RESULTS
+==================================================
+
+PASS: 3 rows passed all checks
+FAIL: 7 rows failed
+
+FAILURES BY COLUMN:
+------------------------------
+
+first_name:
+  - Row 4: Empty (should be non-empty)
+
+last_name:
+  - Row 6: Empty (should be non-empty)
+
+date_of_birth:
+  - Row 7: 'invalid_date' (invalid date value)
+
+address:
+  - Row 3: Empty (should be non-empty)
+  - Row 10: Empty (should be non-empty)
+
+income:
+  - Row 4: Empty (should be non-empty)
+
+account_status:
+  - Row 5: Empty (should be one of: active, inactive, suspended)
+
+created_date:
+  - Row 11: 'invalid_date' (invalid date value)
+
+VALIDATION SUMMARY:
+------------------------------
+- customer_id: 10/10 valid
+- first_name: 9/10 valid
+- last_name: 9/10 valid
+- email: 10/10 valid
+- phone: 10/10 valid
+- date_of_birth: 9/10 valid
+- address: 8/10 valid
+- income: 9/10 valid
+- account_status: 9/10 valid
+- created_date: 9/10 valid
+
+==================================================
+Report generated: Part 3 Complete
